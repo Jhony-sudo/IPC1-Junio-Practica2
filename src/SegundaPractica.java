@@ -193,9 +193,10 @@ import java.util.Scanner;
     public void CrearPelicula(){
         int Id;
         boolean Resultado;
+        leer.nextLine();
         if(ContadorPelicula<=29){
         System.out.println("Ingrese el Nombre de la Pelicula"); 
-        leer.skip("\n");   
+          
         NombrePeliculas[ContadorPelicula] = leer.nextLine();
         System.out.println("Ingrese el A;o de la Pelicula");    
         Anio[ContadorPelicula] = leer.nextInt(); 
@@ -206,8 +207,9 @@ import java.util.Scanner;
            
         } while(Resultado != false);
         IdPelicula[ContadorPelicula] = Id;
+        leer.nextLine();
         System.out.println("Ingrese la categoria de la Pelicula");
-         leer.skip("\n");  
+           
         Categoria[ContadorPelicula] = leer.nextLine();
         EstadoPelicula[ContadorPelicula] = true;
         ContadorPelicula++;
@@ -290,8 +292,9 @@ import java.util.Scanner;
         int Id;
         boolean Resultado;
         if(ContadorCliente<=29){
+        
+        leer.nextLine();
         System.out.println("Ingrese el Nombre del cliente"); 
-        leer.skip("\n");   
         NombreCliente[ContadorCliente] = leer.nextLine();
         System.out.println("Ingrese el No de Telefono del Cliente");    
         Telefono[ContadorCliente] = leer.nextInt(); 
